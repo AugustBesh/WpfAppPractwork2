@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfAppPractwork1.Windows.RctnglWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppPractwork1.Windows"
+        mc:Ignorable="d"
+        Title="RctnglWindow" Height="300" Width="500">
+    <Grid>
+        <Border HorizontalAlignment="Left" Margin="30 30 0 0" VerticalAlignment="Top" >
+            <StackPanel Height="400" >
+                <TextBlock Text="Введите"/>
+                <TextBlock Text="Координаты"/>
+                <TextBlock Text="Прямоугольника"/>
+                <TextBox Name="Cor1" materialDesign:HintAssist.Hint="X1"/>
+                <TextBox Name="Cor1_2" materialDesign:HintAssist.Hint="Y1"/>
+                <TextBox Name="Cor2"  materialDesign:HintAssist.Hint="X2"/>
+                <TextBox Name="Cor2_2" materialDesign:HintAssist.Hint="Y2"/>
+                <TextBox Name="Cor3"  materialDesign:HintAssist.Hint="X3"/>
+                <TextBox Name="Cor3_2" materialDesign:HintAssist.Hint="Y3"/>
+                <TextBox Name="Cor4" materialDesign:HintAssist.Hint="X4"/>
+                <TextBox Name="Cor4_2" materialDesign:HintAssist.Hint="Y4"/>
+            </StackPanel>
+        </Border>
+        <Border HorizontalAlignment="Right" CornerRadius="15" Width="220" Height="220" VerticalAlignment="Center" Margin="40" Background="LightBlue" >
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock Width="200" Height="200"  Background="LightBlue" Foreground="White" Text="Значения периметра, площади,диагоналей"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
